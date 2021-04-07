@@ -1,6 +1,6 @@
-var numKm = prompt("Quanti km percorrerai?");
-var eta = prompt("Quanti anni hai?");
-var prezzo = parseInt(numKm) * 0.21;
+var numKm = parseInt(prompt("Quanti km percorrerai?"));
+var eta = parseInt(prompt("Quanti anni hai?"));
+var prezzo = numKm * 0.21;
 
 if(eta<18){
   console.log(prezzo * 80/100)
@@ -9,3 +9,6 @@ if(eta<18){
 }else{
   console.log(prezzo)
 }
+
+
+document.getElementById('msgInfo').innerHTML = "Il prezzo totale del viaggio sarà " + prezzo;
